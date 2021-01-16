@@ -1,0 +1,323 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+  }
+
+  .social-icons {
+    display: inline-flex; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
+    float: center;
+    font-family: 'Courgette', cursive, Arial, Helvetica, sans-serif;
+    font-size: small;
+    color:grey;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .social-icn {
+      width: auto;
+      height: 50px;
+      margin: 10px;
+  }
+
+  .car-brands {
+    display: inline-flex; 
+    padding: 0  ;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
+    float: center;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 5px;
+}
+
+.car-img-brand {
+    width: auto;
+    max-height: 30px;
+}
+
+.titolo-servizi {
+    display: inline-flex; 
+    margin-top: 5px;
+    padding: 5px;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
+    float: center;
+    font-family: 'Courgette', cursive, Arial, Helvetica, sans-serif;
+    font-size: large;
+    color:grey;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+  text-justify: inter-word;
+}
+
+.navbar {
+    display: flex; 
+    margin: 0;
+    padding: 0  ;
+    background-color: white;
+    width: 100%;
+    height: 5rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
+    
+}
+.logo-container {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+
+.logo {
+    display: inline-flex;
+    justify-content: flex-start ;
+    margin:0px;
+    width: 150px;
+    max-height: 120px;
+}
+
+.fa {
+    display: inline;
+    flex-wrap: wrap;
+    width: 50px;
+    height: auto;
+    font-size: 30px;
+    color: grey;
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a:hover {
+    background-color: rgb(74, 163, 242);
+    transform: scale(1.5);
+
+}
+
+
+a {
+    border-bottom-style: none;
+    text-decoration: none;
+  
+}
+
+@keyframes effect {
+    20%, 100% {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    0%, 10%{
+        width: 55px;
+        height: 55px;
+        font-size: 35px;
+    }
+    5%{
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+}
+
+
+
+.card-container {
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 5px #555;
+    background-color: white;
+    width: auto;
+    height: auto;
+    border-radius: 5%;
+}
+
+/* Screen larger than 600px? 2 column */
+@media (min-width: 600px) {
+    .card-container { grid-template-columns: repeat(2, 1fr); }
+  }
+  
+  /* Screen larger than 900px? 3 columns */
+  @media (min-width: 900px) {
+    .card-container { grid-template-columns: repeat(4, 1fr); }
+  }
+  
+.card .button {
+    align-self: center;
+}
+
+/* Simple Card styles for prettying */
+
+
+* {
+    box-sizing: border-box;
+}
+
+.card__thumbnail {
+    margin: none;
+    padding: none;
+}
+
+img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: none;
+    margin: none;
+}
+
+.card__title {
+    display: flex; 
+    margin: 0px;
+    padding: 0  ;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
+    float: center;
+    font-family: 'Courgette', cursive, Arial, Helvetica, sans-serif;
+    font-size:small;
+    justify-self: center;
+    color:grey;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card buttons formatting */
+
+.card-button-items {
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;  
+    text-align: center;
+    z-index: 0;
+    
+}
+
+
+
+.lft-card-button {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
+    border-radius: 10%;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    height: 30px;
+}
+
+.rgt-card-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
+    border-radius: 10%;
+    width: 30%;
+    margin: 10px;
+    height: 30px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
+}
+
+.final-info {
+    display: flex;
+    font-family: 'Courgette', cursive, Arial, Helvetica, sans-serif;
+    font-size:xx-small;
+    color:grey;
+    align-items: center;
+    justify-content: center;
+}
+.whatsapp-button{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    z-index: 99;
+    background-color: #25d366;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+    box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+    animation: effect 5s infinite ease-in;
+}
+
+.phone-button{
+    position: fixed;
+    justify-content: flex-end;
+    bottom: 15px;
+    right: 15px;
+    z-index: 99;
+    background-color: #1576eb;
+    border-radius: 50px;
+    color: #ffffff;
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+    box-shadow: 0px 0px 25px -6px rgba(0,0,0,1);
+    animation: effect 5s infinite ease-in;
+}
+
