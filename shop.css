@@ -1,0 +1,19 @@
+.comingsoon {
+    display: inline-flex; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: white;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
+    float: center;
+    font-family: 'Courgette', cursive, Arial, Helvetica, sans-serif;
+    font-size: small;
+    color:grey;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+    text-justify: inter-word;
+    border-radius: 5%;
+}
