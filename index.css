@@ -5,6 +5,10 @@ html, body{
     background-color: #eee;
   }
 
+  .fa{
+    color:#000000CC ;
+  }
+
   .social-icons {
     display: inline-flex; 
     margin-top: 10px;
