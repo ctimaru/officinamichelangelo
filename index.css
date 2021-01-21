@@ -31,7 +31,7 @@ html, body{
   }
 
   .car-brands {
-    display: none; 
+    display: inline-flex; 
     padding: 0  ;
     background-color: white;
     width: 100%;
