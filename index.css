@@ -151,8 +151,8 @@ a {
 
 
 .card-container {
+    justify-self: center;
     justify-items: center;
-    max-width: 1200px;
     margin:20px 0 auto;
     display: grid;
     grid-gap: 1rem;
@@ -172,12 +172,18 @@ a {
 
 /* Screen larger than 600px? 2 column */
 @media (min-width: 600px) {
-    .card-container { grid-template-columns: repeat(2, 1fr); }
+    .card-container { grid-template-columns: repeat(2, 1fr); 
+      justify-self: center;
+      justify-items: center;
+      display: grid;
+    }
   }
   
   /* Screen larger than 900px? 3 columns */
   @media (min-width: 900px) {
-    .card-container { grid-template-columns: repeat(4, 1fr); }
+    .card-container { grid-template-columns: repeat(4, 1fr); 
+      justify-self: center;
+    }
   }
   
 .card .button {
@@ -227,7 +233,7 @@ h3 {
 /* Card buttons formatting */
 
 .card-button-items {
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     display: inline-flex;  
     text-align: center;
@@ -241,22 +247,11 @@ h3 {
     display: flex;
     border-bottom: 1px solid #ccc;
     box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
-    border-radius: 10%;
-    width: 30%;
+    border-radius: 5%;
+    width: 60%;
+    justify-self: center;
     justify-content: center;
     align-items: center;
-    margin: 10px;
-    height: 30px;
-}
-
-.rgt-card-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
-    border-radius: 10%;
-    width: 30%;
     margin: 10px;
     height: 30px;
 }
@@ -352,3 +347,25 @@ span {
 @keyframes blink {
   to {visibility: hidden;}
 }
+
+.review-stars ul {
+    display: inline-block;
+    list-style: none;
+  }
+  
+  .review-stars ul li {
+    float: left;
+    margin-right: 5px;
+  }
+  
+  .review-stars ul li i {
+    color: #E4B248;
+    font-size: 12px;
+  }
+  /*color: #E4B248;*/
+  .review-stars ul li i.inactive {
+    color: #c6c6c6;
+  }
+  .star:after {
+    content: "\2605";
+  }
