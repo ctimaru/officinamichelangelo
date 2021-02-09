@@ -28,7 +28,7 @@ html, body{
     font-family: 'Aleo', serif, Arial, Helvetica, sans-serif;
     font-size: 20px;
     border-bottom: 1px solid #ccc;
-    box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
+    box-shadow: 1px 1px 9px 1px #000000CC;
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -61,8 +61,6 @@ html, body{
       height: 50px;
       margin: 10px;
   }
-
-
 
 .titolo-servizi {
     display: inline-flex; 
@@ -182,6 +180,8 @@ a {
     border-radius: 5%;
 }
 
+
+
 /* Screen larger than 600px? 2 column */
 @media (min-width: 600px) {
     .card-container { grid-template-columns: repeat(2, 1fr); 
@@ -227,7 +227,8 @@ img {
     display: flex; 
     margin: 10px;
     padding: 0  ;
-    background-color: white;
+    background-color: rgba(18,72,120, 0.8);
+    border-radius: 5%;
     width: 80%;
     border-bottom: 1px solid #ccc;
     box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
@@ -240,6 +241,10 @@ img {
 
 h3 {
     text-align: center;
+    color: #fff;
+    padding: 0 1rem;
+    top: 2rem; 
+    left: 2rem;
 }
 
 /* Card buttons formatting */
@@ -257,6 +262,7 @@ h3 {
 
 .lft-card-button {
     display: flex;
+    background-color: #10913f;
     border-bottom: 1px solid #ccc;
     box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
     border-radius: 5%;
@@ -266,6 +272,12 @@ h3 {
     align-items: center;
     margin: 10px;
     height: 30px;
+}
+
+.open-article {
+  font-family: 'Aleo', serif, Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: white;
 }
 
 .footer {
