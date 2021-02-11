@@ -1,9 +1,8 @@
-
 /* main */
 
 .header-banner {
     background-color: white;
-    background-image: url('./assets/tagliandi.png');
+    background-image: url('./assets/rebuild-img.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
@@ -23,6 +22,8 @@
 
 /* demo content */
 
+
+
 .content{ 
     text-transform: uppercase;
     margin: 15px;
@@ -36,6 +37,15 @@
     font-size: x-large;
     color: rgba(18,72,120, 0.8);
     font-weight: bold;
+}
+
+ul {
+    font-size: large;
+    color:rgba(18,72,120, 0.8)
+}
+
+li {
+    color: black;
 }
 
 article {
