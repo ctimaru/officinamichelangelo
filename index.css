@@ -231,7 +231,7 @@ img {
     border-bottom: 1px solid #ccc;
     box-shadow: 1px 1px 9px 1px rgba(0,0,0,0.25);
     font-family: 'Aleo', serif, Arial, Helvetica, sans-serif;
-    font-size:x-small;
+    font-size:small;
     justify-self: center;
     color: #000000CC;
     justify-content: center;
@@ -253,7 +253,7 @@ h3 {
     display: inline-flex;  
     text-align: center;
     z-index: 0;
-    
+    font-size: small;
 }
 
 
@@ -274,7 +274,7 @@ h3 {
 
 .open-article {
   font-family: 'Aleo', serif, Arial, Helvetica, sans-serif;
-  font-size: small;
+  font-size: large;
   color: white;
 }
 
